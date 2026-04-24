@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header h2 {
+  color: #0a7f5a;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  background: linear-gradient(to right, #e8f5f0, #ffffff);
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn {
+  padding: 12px 22px;
+  background: #0a7f5a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #066a49;
+}
+
+.hero img {
+  width: 400px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 60px;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ABOUT */
+.about {
+  padding: 60px;
+  background: white;
+  text-align: center;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px;
+  background: #0a7f5a;
+  color: white;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
